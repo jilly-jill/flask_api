@@ -1,0 +1,35 @@
+<html>
+    <head>
+      <title>WELCOME TO THE MADNESS!</title>
+     </head>
+     <body>
+         <h1 style="color:#093657"> Welcome to the Multiverse!
+             {% if player %}
+                 {{player.name}}
+             {% else %}
+                 Family!
+             {% endif %}
+         </h1>
+         Powers:
+         <div>
+             <p><ul>
+              {% for power in player.powers %}
+                 <li>{{power}}</li>
+                 {% endfor %}
+            </ul></p>
+         </div>
+         s:
+         <div>
+             <p><ul>
+                 {% for key in player.roles %}
+                     {{key}}
+                     <ul>
+                     {% for role in player.roles.get(key)%}
+                         <li>{{role}}</li>
+                     {% endfor %}
+                     </ul>
+                 {% endfor %}
+            </ul></p>
+         </div>
+     </body>
+</html>

@@ -1,35 +1,34 @@
-<html>
-    <head>
-      <title>WELCOME TO THE MADNESS!</title>
-     </head>
+<!DOCTYPE html>
+<html lang="en" style="box-sizing:border-box;
+background-image:url('https://vignette.wikia.nocookie.net/marveldatabase/images/3/34/Quiet_Council_of_Krakoa_(Earth-616)_from_House_of_X_Vol_1_6_001.jpg/revision/latest?cb=20191002161246');
+background-size:cover">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Krakoa Welcomes You</title>
+    <link rel="stylesheet" href="/static/style.css">
+        </head>
      <body>
-         <h1 style="color:#093657"> Welcome to the Multiverse!
-             {% if player %}
-                 {{player.name}}
-             {% else %}
-                 Family!
-             {% endif %}
-         </h1>
-         Powers:
-         <div>
-             <p><ul>
-              {% for power in player.powers %}
-                 <li>{{power}}</li>
-                 {% endfor %}
-            </ul></p>
-         </div>
-         s:
-         <div>
-             <p><ul>
-                 {% for key in player.roles %}
-                     {{key}}
-                     <ul>
-                     {% for role in player.roles.get(key)%}
-                         <li>{{role}}</li>
-                     {% endfor %}
-                     </ul>
-                 {% endfor %}
-            </ul></p>
-         </div>
+         <div id="welcome_block"> 
+            <h1 id="h1_one">Welcome to Krakoa<br>
+                </h1>
+                <p style="font-size: 1.5rem;">Famous Quotes from Legendary X-Men below:
+            </p>
+            <br>    
+           
+                    </div>
+         <div id="welcome">
+            {{ mutant }}<br>
+            {{ quote_mutant }}<br><br>
+            {{ mut_image | safe }}
+             
+             
+            
+            <form action='/mutants'><button type='submit'>GO!</button></form>
+        <br>
+    </div>
+</div>
      </body>
 </html>

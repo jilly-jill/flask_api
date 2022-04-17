@@ -1,0 +1,94 @@
+
+button{
+    position: sticky;
+    padding: 2% 4%;
+    display: flex;
+    border-radius: 54%;
+    font-style: oblique;
+    font-size: .5rem;
+    text-decoration: none;
+    font-weight: 700;
+    color:#fff;
+    height: 70px;
+    width: 140px;
+    align-items: center;
+    left: 55rem;
+    top:20rem ;
+    border: 5px white solid;
+    opacity: 0.9;
+    box-shadow: .5px 2px .5px 1px goldenrod;
+    background: -webkit-linear-gradient(130deg,#4F6D6E 12%,#4F6D6E 46%,goldenrod 100%)}
+#welcome{
+    display:flexbox; 
+    color: #fff;
+    font-size: 2rem; 
+    align-content:center;
+    width:750px;
+    max-height:750px; 
+    border:20px solid #4F6D6E; 
+    background-color:goldenrod; 
+    position:relative; 
+    opacity:0.95;
+    margin-left: 10%; 
+    margin-top: 20%}
+#welcome_block{display:flexbox; top: 
+    10rem; 
+    bottom: 10rem; 
+    left: 17rem; 
+    right:17rem;
+    align-content:center;
+    align-items:center;
+    width:750px;
+    max-height:500px; 
+    border:20px solid goldenrod; 
+    background-color:#4F6D6E; 
+    position:relative; 
+    opacity:0.89;
+    color: #FFF;
+    font-size: 1.5rem;
+}
+#h1_block{display:flexbox; 
+    top: 10rem; 
+    bottom: 10rem; 
+    left: 17rem; 
+    right:17rem;
+    align-content:center;
+    align-items:center;
+    width:750px;
+    max-height:500px; 
+    border:20px solid goldenrod; 
+    background-color:#4F6D6E; 
+    position:relative; 
+    opacity:0.89;
+    color: #fff}
+#char_img{
+    align-items: center;
+    position: sticky;
+    max-width:50%;
+    max-height:50%;
+}
+#m_h1{
+    color: #FFF;
+    background-color: goldenrod;
+    font-size: 4rem;
+    border: 20px solid #4F6D6E
+}
+#search_div{
+    display:flexbox; 
+    color: #fff;
+    font-size: 2rem;
+    font-weight:700; 
+    align-content:center;
+    width:950px;
+    max-height:260px; 
+    border:20px solid goldenrod; 
+    background-color:#4F6D6E; 
+    position:relative; 
+    opacity:0.95;
+    left: 10%;
+    top: 7%
+
+
+}
+#style_p{
+padding:7% 5%}
